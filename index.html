@@ -1,46 +1,62 @@
 <!DOCTYPE html>
+<!-- HTML5 Document Declaration -->
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
+  <!-- Set character encoding -->
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Ensure mobile responsiveness -->
+
   <title>Quiz Game | Home</title>
+  <!-- Appears in browser tab -->
+
   <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Link to external stylesheet -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts: Fredoka (headings), Quicksand (body) -->
 </head>
 
 <body class="home-page">
-  <div class="page-wrapper">
+  <!-- Page-specific class to help with styling and JS logic -->
 
-    <!-- Main Header -->
+  <div class="page-wrapper">
+    <!-- Wrapper to keep consistent layout -->
+
     <header class="main-header">
-      <h1>🧠 Quiz Challenge</h1>
+      <h1><i class="fa-solid fa-gamepad"></i> Quiz Challenge</h1>
+      <!-- Fun header with Font Awesome icon -->
     </header>
 
-    <!-- Welcome Section -->
     <main class="main-content">
       <section class="intro">
-        <h2>Welcome!</h2>
+        <h2><i class="fa-solid fa-circle-info"></i> Welcome!</h2>
         <p>
-          Test your knowledge with this fun quiz about general knowledge, geography, sports, music, and film.
+          Test your knowledge in this fun quiz covering general knowledge, geography,
+          sports, music, and film. Are you ready?
         </p>
 
-        <!-- Navigation Buttons -->
+        <!-- Navigation buttons -->
         <div class="button-group">
-          <a href="how-to.html" class="btn">How to Play</a>
-          <a href="quiz.html" class="btn btn-green">Start Quiz</a>
+          <a href="how-to.html" class="btn">
+            <i class="fa-solid fa-book-open"></i> How to Play
+          </a>
+
+          <a href="quiz.html" class="btn btn-green">
+            <i class="fa-solid fa-play"></i> Start Quiz
+          </a>
         </div>
       </section>
     </main>
 
-    <!-- Footer -->
     <footer class="main-footer">
       <p>&copy; 2025 Quiz Game. All rights reserved.</p>
     </footer>
+
   </div>
 
-  <script src="assets/js/script.js"></script>
+  <!-- Load Font Awesome for icons -->
   <script src="https://kit.fontawesome.com/6ac9086a06.js" crossorigin="anonymous"></script>
-
 </body>
-
 </html>
