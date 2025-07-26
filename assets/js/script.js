@@ -36,7 +36,7 @@ const questions = [
 ];
 
 // ============================
-// 2. Quiz Logic (quiz.html)
+// 2. Quiz Page Logic
 // ============================
 
 if (document.body.classList.contains("quiz-page")) {
@@ -50,10 +50,8 @@ if (document.body.classList.contains("quiz-page")) {
   const nextBtn = document.getElementById("next-btn");
   const submitBtn = document.getElementById("submit-btn");
 
-  // Shuffle questions each time quiz starts
   const shuffledQuestions = [...questions].sort(() => Math.random() - 0.5);
 
-  // Display first question
   displayQuestion();
 
   function displayQuestion() {
@@ -80,20 +78,6 @@ if (document.body.classList.contains("quiz-page")) {
     e.target.classList.add("selected");
   }
 
-  nextBtn.addEventListener("click", () => {
-    saveAnswer();
-    currentIndex++;
-    displayQuestion();
-  });
-
-  submitBtn.addEventListener("click", () => {
-    saveAnswer();
-    localStorage.setItem("quizScore", score);
-    localStorage.setItem("quizTotal", shuffledQuestions.length);
-    localStorage.setItem("quizAnswers", JSON.stringify(userAnswers));
-    window.location.href = "results.html";
-  });
-
   function saveAnswer() {
     const selectedBtn = document.querySelector(".choice-btn.selected");
     if (!selectedBtn) return;
@@ -111,10 +95,24 @@ if (document.body.classList.contains("quiz-page")) {
 
     if (selectedIndex === correctIndex) score++;
   }
+
+  nextBtn.addEventListener("click", () => {
+    saveAnswer();
+    currentIndex++;
+    displayQuestion();
+  });
+
+  submitBtn.addEventListener("click", () => {
+    saveAnswer();
+    localStorage.setItem("quizScore", score);
+    localStorage.setItem("quizTotal", shuffledQuestions.length);
+    localStorage.setItem("quizAnswers", JSON.stringify(userAnswers));
+    window.location.href = "results.html";
+  });
 }
 
 // ============================
-// 3. Results Logic (results.html)
+// 3. Results Page Logic
 // ============================
 
 if (document.body.classList.contains("results-page")) {
@@ -159,6 +157,5 @@ if (document.body.classList.contains("results-page")) {
     resultDetails.appendChild(review);
   });
 
-  // Optional: Clear quiz data after results are shown
-  localStorage.clear();
+  localStorage.clear(); // Optional: clear saved data after result
 }
