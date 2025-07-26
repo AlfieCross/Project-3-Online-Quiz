@@ -1,55 +1,68 @@
 <!DOCTYPE html>
+<!-- HTML5 doctype declaration -->
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
+  <!-- UTF-8 encoding for special characters -->
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz Game | Question</title>
+  <!-- Makes layout responsive on all screens -->
+
+  <title>Quiz Game | Quiz</title>
+  <!-- Title for the browser tab -->
+
   <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Connects to main stylesheet -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts for fun and legible style -->
 </head>
 
 <body class="quiz-page">
-  <div class="page-wrapper">
+  <!-- Page-specific class for JS and CSS targeting -->
 
-    <!-- Header -->
+  <div class="page-wrapper">
+    <!-- Main content container -->
+
     <header class="main-header">
-      <h1>🧠 Quiz Time</h1>
+      <h1><i class="fa-solid fa-question"></i> Quiz Time</h1>
     </header>
 
-    <!-- Quiz Content -->
     <main class="main-content">
       <section class="quiz-container">
+        <!-- Question number progress -->
+        <div id="question-number" class="quiz-progress">
+          Question 1 of 5
+        </div>
 
-        <!-- Question Progress -->
-        <div id="question-number" class="quiz-progress">Question 1 of 5</div>
-
-        <!-- Question Text -->
+        <!-- Dynamic question text -->
         <h2 id="question-text">Loading question...</h2>
 
-        <!-- Answer Buttons -->
-        <div id="choices" class="choices-container">
-          <!-- Buttons injected by JavaScript -->
-        </div>
+        <!-- Answer buttons get injected here -->
+        <div id="choices" class="choices-container"></div>
 
-        <!-- Navigation Controls -->
+        <!-- Navigation controls -->
         <div class="quiz-controls">
-          <button id="next-btn" class="btn">Next</button>
-          <button id="submit-btn" class="btn" style="display: none;">Submit</button>
-        </div>
+          <button id="next-btn" class="btn">
+            <i class="fa-solid fa-arrow-right"></i> Next
+          </button>
 
+          <button id="submit-btn" class="btn btn-green" style="display: none;">
+            <i class="fa-solid fa-flag-checkered"></i> Submit
+          </button>
+        </div>
       </section>
     </main>
 
-    <!-- Footer -->
     <footer class="main-footer">
       <p>&copy; 2025 Quiz Game. All rights reserved.</p>
     </footer>
-
   </div>
 
-  <!-- Quiz Logic JavaScript -->
-  <script src="assets/js/script.js"></script>
+  <!-- Font Awesome for icons -->
   <script src="https://kit.fontawesome.com/6ac9086a06.js" crossorigin="anonymous"></script>
-</body>
 
+  <!-- JavaScript for quiz logic -->
+  <script src="assets/js/script.js"></script>
+</body>
 </html>
