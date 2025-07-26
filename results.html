@@ -1,50 +1,61 @@
 <!DOCTYPE html>
+<!-- HTML5 document declaration -->
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
+  <!-- Character encoding for special characters -->
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Makes the layout responsive -->
+
   <title>Quiz Game | Results</title>
+  <!-- Tab title in the browser -->
+
   <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Link to custom styles -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts for styling -->
 </head>
 
 <body class="results-page">
-  <div class="page-wrapper">
+  <!-- Specific body class to trigger result logic -->
 
-    <!-- Header -->
+  <div class="page-wrapper">
+    <!-- Main layout wrapper -->
+
     <header class="main-header">
-      <h1>🎉 Quiz Results</h1>
+      <h1><i class="fa-solid fa-award"></i> Quiz Results</h1>
     </header>
 
-    <!-- Results Section -->
     <main class="main-content">
       <section class="results-summary">
         <h2>Your Results</h2>
 
-        <!-- Score Output -->
+        <!-- JS will update this with score -->
         <p id="score-text">Loading score...</p>
 
-        <!-- Detailed Feedback -->
-        <div id="result-details">
-          <!-- JavaScript will insert individual Q&A breakdown here -->
+        <!-- JS will insert individual question breakdowns here -->
+        <div id="result-details" class="result-details">
+          <!-- Results get dynamically injected here -->
         </div>
 
-        <!-- Retry Button -->
-        <a href="index.html" class="btn">Play Again</a>
+        <!-- Link to restart the quiz -->
+        <a href="index.html" class="btn">
+          <i class="fa-solid fa-rotate-right"></i> Try Again
+        </a>
       </section>
     </main>
 
-    <!-- Footer -->
     <footer class="main-footer">
       <p>&copy; 2025 Quiz Game. All rights reserved.</p>
     </footer>
-
   </div>
 
-  <!-- Load Results Logic -->
-  <script src="assets/js/script.js"></script>
+  <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/6ac9086a06.js" crossorigin="anonymous"></script>
 
+  <!-- JavaScript result logic -->
+  <script src="assets/js/script.js"></script>
 </body>
-
 </html>
