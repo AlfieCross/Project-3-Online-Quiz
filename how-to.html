@@ -1,50 +1,61 @@
 <!DOCTYPE html>
+<!-- HTML5 doctype declaration -->
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
+  <!-- Character encoding for UTF-8 -->
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Makes page responsive on all devices -->
+
   <title>Quiz Game | How to Play</title>
+  <!-- Title shown in browser tab -->
+
   <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Link to your CSS file -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts: Fredoka for headings, Quicksand for body text -->
 </head>
 
 <body class="how-to-page">
-  <div class="page-wrapper">
+  <!-- Page-specific class to allow targeting in JS and CSS -->
 
-    <!-- Header -->
+  <div class="page-wrapper">
+    <!-- Consistent structure container -->
+
     <header class="main-header">
-      <h1>📘 How to Play</h1>
+      <h1><i class="fa-solid fa-book-open"></i> How to Play</h1>
+      <!-- Title with game-style icon -->
     </header>
 
-    <!-- Instructions Section -->
     <main class="main-content">
       <section class="instructions">
-        <h2>Welcome to the Quiz!</h2>
-        <p>Read the instructions before starting:</p>
+        <h2><i class="fa-solid fa-lightbulb"></i> Ready to get started?</h2>
+        <p>Here's how to play the quiz game:</p>
 
-        <ul>
-          <li>You’ll be asked one question at a time.</li>
-          <li>Each has multiple choices — click to select one.</li>
-          <li>Click <strong>Next</strong> to go forward.</li>
-          <li>Click <strong>Submit</strong> after the last question.</li>
-          <li>Your score and correct answers will appear on the results screen.</li>
+        <!-- Game instructions -->
+        <ul class="instruction-list">
+          <li><i class="fa-solid fa-check"></i> You’ll be asked 5 fun questions, one at a time.</li>
+          <li><i class="fa-solid fa-check"></i> Choose one answer per question.</li>
+          <li><i class="fa-solid fa-check"></i> Click <strong>Next</strong> to move on.</li>
+          <li><i class="fa-solid fa-check"></i> On the final question, click <strong>Submit</strong>.</li>
+          <li><i class="fa-solid fa-check"></i> You’ll get a breakdown of your answers at the end!</li>
         </ul>
 
-        <!-- Start Quiz Button -->
-        <a href="quiz.html" class="btn start-btn">Start the Quiz</a>
+        <!-- Start button -->
+        <a href="quiz.html" class="btn btn-green">
+          <i class="fa-solid fa-play"></i> Start the Quiz
+        </a>
       </section>
     </main>
 
-    <!-- Footer -->
     <footer class="main-footer">
       <p>&copy; 2025 Quiz Game. All rights reserved.</p>
     </footer>
-
   </div>
 
-  <script src="assets/js/script.js"></script>
+  <!-- Font Awesome Script -->
   <script src="https://kit.fontawesome.com/6ac9086a06.js" crossorigin="anonymous"></script>
-
 </body>
-
 </html>
