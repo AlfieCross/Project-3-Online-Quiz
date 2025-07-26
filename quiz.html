@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Game | Question</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="quiz-page">
+  <div class="page-wrapper">
+
+    <!-- Header -->
+    <header class="main-header">
+      <h1>🧠 Quiz Time</h1>
+    </header>
+
+    <!-- Main Quiz Section -->
+    <main class="main-content">
+      <section class="quiz-container">
+
+        <!-- Dynamic Question Counter -->
+        <div id="question-number" class="quiz-progress">Question 1 of 5</div>
+
+        <!-- Question Text Placeholder -->
+        <h2 id="question-text">Loading question...</h2>
+
+        <!-- Choices inserted by JavaScript -->
+        <div id="choices" class="choices-container"></div>
+
+        <!-- Navigation Buttons -->
+        <div class="quiz-controls">
+          <button id="next-btn" class="btn">Next</button>
+          <button id="submit-btn" class="btn" style="display: none;">Submit</button>
+        </div>
+        
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <p>&copy; 2025 Quiz Game. All rights reserved.</p>
+    </footer>
+
+  </div>
+
+  <!-- External JavaScript File -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
