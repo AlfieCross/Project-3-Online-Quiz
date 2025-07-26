@@ -1,8 +1,3 @@
-// ============================
-// Quiz Game Script
-// ============================
-
-// Wait until all DOM content is loaded before running any JS
 document.addEventListener("DOMContentLoaded", () => {
   // ============================
   // 1. Quiz Question Data
@@ -56,12 +51,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const nextBtn = document.getElementById("next-btn");
     const submitBtn = document.getElementById("submit-btn");
 
-    // Shuffle the question order for each game
+    // Shuffle the questions for randomness
     const shuffledQuestions = [...questions].sort(() => Math.random() - 0.5);
 
+    // Load first question
     displayQuestion();
 
-    // Show current question and answer buttons
     function displayQuestion() {
       const current = shuffledQuestions[currentIndex];
       questionNumber.textContent = `Question ${currentIndex + 1} of ${shuffledQuestions.length}`;
@@ -77,25 +72,21 @@ document.addEventListener("DOMContentLoaded", () => {
         choicesContainer.appendChild(btn);
       });
 
-      // Only show "Next" if not the last question
       nextBtn.style.display = currentIndex < shuffledQuestions.length - 1 ? "inline-block" : "none";
       submitBtn.style.display = currentIndex === shuffledQuestions.length - 1 ? "inline-block" : "none";
     }
 
-    // Add "selected" style to clicked choice
     function selectAnswer(e) {
       document.querySelectorAll(".choice-btn").forEach(btn => btn.classList.remove("selected"));
       e.target.classList.add("selected");
     }
 
-    // Move to next question
     nextBtn.addEventListener("click", () => {
       saveAnswer();
       currentIndex++;
       displayQuestion();
     });
 
-    // Finish quiz and go to results
     submitBtn.addEventListener("click", () => {
       saveAnswer();
       localStorage.setItem("quizScore", score);
@@ -104,7 +95,6 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "results.html";
     });
 
-    // Save selected answer
     function saveAnswer() {
       const selectedBtn = document.querySelector(".choice-btn.selected");
       if (!selectedBtn) return;
@@ -170,7 +160,7 @@ document.addEventListener("DOMContentLoaded", () => {
       resultDetails.appendChild(review);
     });
 
-    // Clear quiz data after showing results
+    // Clear stored data
     localStorage.clear();
   }
 });
