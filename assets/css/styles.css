@@ -70,39 +70,46 @@ h2 {
   margin: 0 auto;
 }
 
-/* ========================
+/* ==============================
    Buttons
-======================== */
+============================== */
+
 .btn {
-  background-color: #ff5e57;
-  color: #fff;
-  border: none;
-  border-radius: 30px;
-  padding: 0.7rem 1.5rem;
-  font-size: 1rem;
-  font-family: 'Fredoka', sans-serif;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin: 0.5rem;
   display: inline-block;
+  background-color: #ff9a00;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
   text-align: center;
-  text-decoration: none;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Fredoka', sans-serif;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .btn:hover {
-  background-color: #ff3b30;
+  background-color: #ffb733;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 
 .btn-green {
-  background-color: #28c76f;
+  background-color: #34c759;
 }
 
 .btn-green:hover {
-  background-color: #20b95f;
+  background-color: #5ce173;
 }
 
 .start-btn {
-  font-size: 1.1rem;
+  background-color: #007aff;
+}
+
+.start-btn:hover {
+  background-color: #339cff;
 }
 
 /* ========================
