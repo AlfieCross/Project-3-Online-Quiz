@@ -15,25 +15,27 @@
       <h1>🧠 Quiz Time</h1>
     </header>
 
-    <!-- Main Quiz Section -->
+    <!-- Quiz Content -->
     <main class="main-content">
       <section class="quiz-container">
 
-        <!-- Dynamic Question Counter -->
+        <!-- Question Progress -->
         <div id="question-number" class="quiz-progress">Question 1 of 5</div>
 
-        <!-- Question Text Placeholder -->
+        <!-- Question Text -->
         <h2 id="question-text">Loading question...</h2>
 
-        <!-- Choices inserted by JavaScript -->
-        <div id="choices" class="choices-container"></div>
+        <!-- Answer Buttons -->
+        <div id="choices" class="choices-container">
+          <!-- Buttons injected by JavaScript -->
+        </div>
 
-        <!-- Navigation Buttons -->
+        <!-- Navigation Controls -->
         <div class="quiz-controls">
           <button id="next-btn" class="btn">Next</button>
           <button id="submit-btn" class="btn" style="display: none;">Submit</button>
         </div>
-        
+
       </section>
     </main>
 
@@ -44,7 +46,8 @@
 
   </div>
 
-  <!-- External JavaScript File -->
+  <!-- Quiz Logic JavaScript -->
   <script src="assets/js/script.js"></script>
 </body>
 </html>
+
