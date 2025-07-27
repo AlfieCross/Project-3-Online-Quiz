@@ -65,6 +65,10 @@ Project-3-Online-Quiz/
 │   └── screenshots/
 │       ├── home.png
 │       ├── how-to.png
+│       ├── lighthouse-home.png
+│       ├── lighthouse-how-to.png
+│       ├── lighthouse-quiz.png
+│       ├── lighthouse-results.png
 │       ├── quiz-in-progress.png
 │       ├── results.png
 │       └── mobile-view.png
