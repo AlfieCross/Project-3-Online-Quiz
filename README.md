@@ -91,7 +91,8 @@ Here are key screenshots showcasing the project:
 ![Quiz In Progress](assets/screenshots/quiz-in-progress.png)
 
 ### Results Page
-![Results Page](assets/screenshots/results.png)
+![Results Page 1](assets/screenshots/results-1.png)
+![Results Page 2](assets/screenshots/results-2.png)
 
 ---
 
