@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // ============================
 
   const questions = [
-    // ==== General Knowledge ====
+    // General Knowledge
     {
       category: "General Knowledge",
       question: "What is the capital city of Australia?",
@@ -38,23 +38,23 @@ document.addEventListener("DOMContentLoaded", () => {
       question: "How many continents are there?",
       choices: ["5", "6", "7", "8"],
       answer: 2,
-      explanation: "There are 7 continents: Asia, Africa, North America, South America, Antarctica, Europe, and Australia."
+      explanation: "There are 7 continents."
     },
-  
-    // ==== Geography & Landmarks ====
+
+    // Geography
     {
       category: "Geography",
       question: "Which country is home to the ancient city of Petra?",
       choices: ["Egypt", "Jordan", "Greece", "Turkey"],
       answer: 1,
-      explanation: "Petra is located in Jordan and is one of the New Seven Wonders of the World."
+      explanation: "Petra is located in Jordan."
     },
     {
       category: "Geography",
       question: "Mount Everest lies on the border between Nepal and which country?",
       choices: ["India", "China", "Bhutan", "Pakistan"],
       answer: 1,
-      explanation: "Mount Everest sits on the border between Nepal and China (Tibet)."
+      explanation: "Mount Everest sits between Nepal and China (Tibet)."
     },
     {
       category: "Geography",
@@ -68,54 +68,54 @@ document.addEventListener("DOMContentLoaded", () => {
       question: "What is the smallest country in the world?",
       choices: ["Monaco", "Vatican City", "San Marino", "Malta"],
       answer: 1,
-      explanation: "Vatican City is the smallest independent state in the world by both area and population."
+      explanation: "Vatican City is the smallest by area and population."
     },
     {
       category: "Geography",
       question: "Which desert is the largest in the world?",
       choices: ["Sahara", "Gobi", "Arctic", "Antarctic"],
       answer: 3,
-      explanation: "The Antarctic is technically the world’s largest desert."
+      explanation: "The Antarctic is the world’s largest desert."
     },
-  
-    // ==== Sports ====
+
+    // Sports
     {
       category: "Sports",
       question: "Which country won the FIFA World Cup in 2018?",
       choices: ["Brazil", "Germany", "France", "Argentina"],
       answer: 2,
-      explanation: "France won the 2018 FIFA World Cup in Russia."
+      explanation: "France won the 2018 FIFA World Cup."
     },
     {
       category: "Sports",
-      question: "How many players are there on a standard football (soccer) team on the field?",
+      question: "How many players are on a standard football team on the field?",
       choices: ["9", "10", "11", "12"],
       answer: 2,
-      explanation: "Each team has 11 players on the field in football."
+      explanation: "Each football team has 11 players on the field."
     },
     {
       category: "Sports",
       question: "Which sport is associated with Wimbledon?",
       choices: ["Golf", "Tennis", "Cricket", "Polo"],
       answer: 1,
-      explanation: "Wimbledon is one of the four major tennis tournaments."
+      explanation: "Wimbledon is a major tennis tournament."
     },
     {
       category: "Sports",
       question: "What country is known for sumo wrestling?",
       choices: ["South Korea", "China", "Japan", "Thailand"],
       answer: 2,
-      explanation: "Sumo wrestling is a traditional sport of Japan."
+      explanation: "Sumo wrestling originates from Japan."
     },
     {
       category: "Sports",
       question: "Which Olympic Games were postponed due to COVID-19?",
       choices: ["Rio 2016", "London 2012", "Tokyo 2020", "Beijing 2008"],
       answer: 2,
-      explanation: "Tokyo 2020 was postponed to 2021 due to the COVID-19 pandemic."
+      explanation: "Tokyo 2020 was postponed to 2021."
     },
-  
-    // ==== Music ====
+
+    // Music
     {
       category: "Music",
       question: "Which artist released the album '25'?",
@@ -132,10 +132,10 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       category: "Music",
-      question: "Which band released the song 'Bohemian Rhapsody'?",
-      choices: ["The Beatles", "Queen", "Pink Floyd", "The Rolling Stones"],
+      question: "Which band released 'Bohemian Rhapsody'?",
+      choices: ["The Beatles", "Queen", "Pink Floyd", "Rolling Stones"],
       answer: 1,
-      explanation: "'Bohemian Rhapsody' is one of Queen’s most iconic songs."
+      explanation: "Queen released 'Bohemian Rhapsody'."
     },
     {
       category: "Music",
@@ -151,47 +151,47 @@ document.addEventListener("DOMContentLoaded", () => {
       answer: 3,
       explanation: "Taylor Swift released 'Shake It Off' in 2014."
     },
-  
-    // ==== Film & TV ====
+
+    // Film & TV
     {
       category: "Film & TV",
       question: "Who directed the movie 'Inception'?",
-      choices: ["Christopher Nolan", "Steven Spielberg", "James Cameron", "Quentin Tarantino"],
+      choices: ["Christopher Nolan", "Steven Spielberg", "James Cameron", "Tarantino"],
       answer: 0,
-      explanation: "Christopher Nolan directed 'Inception' in 2010."
+      explanation: "Christopher Nolan directed 'Inception'."
     },
     {
       category: "Film & TV",
-      question: "Which movie features a talking snowman named Olaf?",
+      question: "Which movie features a snowman named Olaf?",
       choices: ["Frozen", "Moana", "Tangled", "Encanto"],
       answer: 0,
-      explanation: "Olaf is the snowman in Disney's Frozen."
+      explanation: "Olaf is the snowman in Frozen."
     },
     {
       category: "Film & TV",
-      question: "What’s the name of the wizarding school in Harry Potter?",
-      choices: ["Durmstrang", "Hogwarts", "Ilvermorny", "Beauxbatons"],
+      question: "What’s the name of the wizard school in Harry Potter?",
+      choices: ["Durmstrang", "Hogwarts", "Beauxbatons", "Ilvermorny"],
       answer: 1,
-      explanation: "Harry Potter attends Hogwarts School of Witchcraft and Wizardry."
+      explanation: "Harry attends Hogwarts School of Witchcraft and Wizardry."
     },
     {
       category: "Film & TV",
-      question: "Which actor plays Iron Man in the Marvel Cinematic Universe?",
-      choices: ["Chris Evans", "Robert Downey Jr.", "Chris Hemsworth", "Mark Ruffalo"],
+      question: "Which actor plays Iron Man in the MCU?",
+      choices: ["Chris Evans", "Robert Downey Jr.", "Hemsworth", "Ruffalo"],
       answer: 1,
-      explanation: "Robert Downey Jr. plays Tony Stark/Iron Man."
+      explanation: "Robert Downey Jr. plays Iron Man."
     },
     {
       category: "Film & TV",
       question: "What’s the highest-grossing film of all time (as of 2025)?",
-      choices: ["Avatar", "Avengers: Endgame", "Titanic", "Jurassic World"],
+      choices: ["Avatar", "Endgame", "Titanic", "Jurassic World"],
       answer: 0,
-      explanation: "Avatar remains the highest-grossing film globally."
+      explanation: "Avatar remains the highest-grossing film."
     }
   ];
-  
+
   // ============================
-  // 2. Quiz Logic (quiz.html)
+  // 2. Quiz Logic
   // ============================
 
   if (document.body.classList.contains("quiz-page")) {
@@ -201,19 +201,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const questionNumber = document.getElementById("question-number");
     const questionText = document.getElementById("question-text");
+    const questionCategory = document.getElementById("question-category");
     const choicesContainer = document.getElementById("choices");
     const nextBtn = document.getElementById("next-btn");
     const submitBtn = document.getElementById("submit-btn");
 
-    // Shuffle the questions for randomness
     const shuffledQuestions = [...questions].sort(() => Math.random() - 0.5);
 
-    // Load first question
     displayQuestion();
 
     function displayQuestion() {
       const current = shuffledQuestions[currentIndex];
       questionNumber.textContent = `Question ${currentIndex + 1} of ${shuffledQuestions.length}`;
+      questionCategory.textContent = `Category: ${current.category}`;
       questionText.textContent = current.question;
       choicesContainer.innerHTML = "";
 
@@ -269,7 +269,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // ============================
-  // 3. Results Logic (results.html)
+  // 3. Results Logic
   // ============================
 
   if (document.body.classList.contains("results-page")) {
@@ -314,7 +314,6 @@ document.addEventListener("DOMContentLoaded", () => {
       resultDetails.appendChild(review);
     });
 
-    // Clear stored data
     localStorage.clear();
   }
 });
