@@ -31,6 +31,10 @@ h3 {
   font-weight: 600;
   color: #ff6b00;
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 p,
@@ -52,13 +56,23 @@ li {
   padding: 2rem;
   max-width: 960px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+
 
 /* ========== 4. Buttons ========== */
 .btn {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background: #ff6b00;
   color: white;
+  margin-top: 1rem;
   padding: 0.75rem 1.25rem;
   border: none;
   border-radius: 6px;
@@ -66,6 +80,7 @@ li {
   font-weight: bold;
   cursor: pointer;
   transition: background 0.3s ease;
+  font-size: 1.1rem;
 }
 
 .btn:hover {
