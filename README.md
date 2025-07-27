@@ -98,7 +98,7 @@ Here are key screenshots showcasing the project:
 
 ## 📊 Lighthouse Reports
 
-All major pages were tested using Google Lighthouse on desktop:
+All major pages were tested using Google Lighthouse on desktop. Below are the results:
 
 | Page         | Performance | Accessibility | Best Practices | SEO |
 | ------------ | ----------- | ------------- | -------------- | --- |
@@ -106,6 +106,20 @@ All major pages were tested using Google Lighthouse on desktop:
 | how-to.html  | 100         | 92            | 96             | 90  |
 | quiz.html    | 83          | 91            | 93             | 90  |
 | results.html | 100         | 90            | 96             | 90  |
+
+### 🔍 Screenshots of Lighthouse Results:
+
+**Home Page**  
+![Lighthouse Home](assets/screenshots/lighthouse-home.png)
+
+**How to Play Page**  
+![Lighthouse How To](assets/screenshots/lighthouse-how-to.png)
+
+**Quiz Page**  
+![Lighthouse Quiz](assets/screenshots/lighthouse-quiz.png)
+
+**Results Page**  
+![Lighthouse Results](assets/screenshots/lighthouse-results.png)
 
 ---
 
