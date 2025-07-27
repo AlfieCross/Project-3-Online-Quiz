@@ -148,17 +148,82 @@ p, li {
 }
 
 /* ========== 7. Responsive Design ========== */
+@media (max-width: 1024px) {
+  .main-content {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  .btn {
+    padding: 0.65rem 1.2rem;
+    font-size: 1rem;
+  }
+
+  .choice-btn {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 768px) {
   .main-content {
     padding: 1rem;
   }
 
+  .quiz-container,
+  .results-summary,
+  .instructions {
+    padding: 1.2rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
   .btn {
     width: 100%;
-    text-align: center;
+    font-size: 0.95rem;
+    padding: 0.65rem 1rem;
   }
 
   .choice-btn {
     font-size: 0.95rem;
+    padding: 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-header,
+  .main-footer {
+    padding: 1rem;
+  }
+
+  .quiz-progress,
+  .quiz-category {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.85rem;
+    padding: 0.6rem 0.8rem;
+  }
+
+  .choice-btn {
+    font-size: 0.85rem;
+    padding: 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
   }
 }
