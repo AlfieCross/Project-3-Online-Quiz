@@ -96,6 +96,19 @@ Here are key screenshots showcasing the project:
 
 ---
 
+## 📊 Lighthouse Reports
+
+All major pages were tested using Google Lighthouse on desktop:
+
+| Page         | Performance | Accessibility | Best Practices | SEO |
+| ------------ | ----------- | ------------- | -------------- | --- |
+| index.html   | 100         | 90            | 96             | 90  |
+| how-to.html  | 100         | 92            | 96             | 90  |
+| quiz.html    | 83          | 91            | 93             | 90  |
+| results.html | 100         | 90            | 96             | 90  |
+
+---
+
 ## ✅ Testing & Validation
 
 - HTML and CSS validated using W3C validator
