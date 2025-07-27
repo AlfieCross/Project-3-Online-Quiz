@@ -24,20 +24,24 @@ body {
 }
 
 /* ========== 2. Typography ========== */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Fredoka', sans-serif;
   font-weight: 600;
   color: #ff6b00;
   margin-bottom: 1rem;
 }
 
-p, li {
+p,
+li {
   font-size: 1rem;
   margin-bottom: 0.75rem;
 }
 
 /* ========== 3. Layout Structure ========== */
-.main-header, .main-footer {
+.main-header,
+.main-footer {
   background: #fff0e5;
   padding: 1.5rem;
   text-align: center;
@@ -86,11 +90,13 @@ p, li {
 }
 
 /* ========== 5. Quiz Content ========== */
-.quiz-container, .results-summary, .instructions {
+.quiz-container,
+.results-summary,
+.instructions {
   background: #fff;
   border-radius: 8px;
   padding: 2rem;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 .quiz-progress {
@@ -204,6 +210,7 @@ p, li {
 }
 
 @media (max-width: 480px) {
+
   .main-header,
   .main-footer {
     padding: 1rem;
